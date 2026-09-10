@@ -4,9 +4,7 @@
 
 [![Platform](https://img.shields.io/badge/platform-ESP32--S3-blue?logo=espressif)](https://www.espressif.com/en/products/socs/esp32-s3)
 [![Framework](https://img.shields.io/badge/framework-Arduino%20%7C%20PlatformIO-orange?logo=platformio)](https://platformio.org/)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Status](https://img.shields.io/badge/status-active-brightgreen)]()
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blueviolet)]()
 
 ---
 
