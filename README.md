@@ -8,7 +8,7 @@
 
 ---
 
-TalonESP is an open-source, pocket-sized instrument for wireless research, RF analysis, and hardware exploration. It consolidates Sub-GHz, WiFi, Bluetooth LE, infrared, LoRa, GPS, and native USB HID into a single self-contained device with a color TFT display and a six-button interface.
+TalonESP is an open-source, pocket-sized instrument for wireless research, RF analysis, and hardware exploration. It consolidates Sub-GHz, WiFi, Bluetooth LE, BADUSB,  infrared, LoRa, GPS, GPIO.
 
 The system runs entirely on-device. There is no cloud dependency, no telemetry, and no account requirement. All captures, scripts, and logs are stored on a removable microSD card using open, interoperable formats: Flipper-compatible `.sub` and `.ir` files, standard `.pcap` captures, DuckyScript payloads, and WiGLE CSV wardriving output. Every artifact TalonESP produces can be read, edited, or analyzed with existing tools.
 
