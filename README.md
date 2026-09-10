@@ -14,6 +14,14 @@ The system runs entirely on-device. There is no cloud dependency, no telemetry, 
 
 ---
 
+> [!WARNING]
+> **TalonESP is a research and educational tool.**
+> It transmits on regulated radio bands and can disrupt wireless networks.
+> Use it only on networks, devices, and infrastructure you own or have
+> explicit written permission to test. Unauthorized use may be illegal in
+> your jurisdiction and could result in criminal charges. The authors
+> accept no liability for misuse.
+> 
 ## Table of Contents
 
 - [Capabilities](#capabilities)
