@@ -12,8 +12,6 @@ TalonESP is an open-source, pocket-sized instrument for wireless research, RF an
 
 The system runs entirely on-device. There is no cloud dependency, no telemetry, and no account requirement. All captures, scripts, and logs are stored on a removable microSD card using open, interoperable formats: Flipper-compatible `.sub` and `.ir` files, standard `.pcap` captures, DuckyScript payloads, and WiGLE CSV wardriving output. Every artifact TalonESP produces can be read, edited, or analyzed with existing tools.
 
-> *Sharp. Precise. Catches everything.*
-
 ---
 
 ## Table of Contents
