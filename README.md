@@ -167,8 +167,6 @@ Bus Pirate-style pin control and protocol tooling.
 | **Snake** | ✅ | Classic grid snake with score and speed progression. |
 | **Tetris** | ✅ | Falling-block puzzle with levels and hard drop. |
 | **Pong** | ✅ | Breakout-style solo paddle game with three lives. |
-| **Jumper** | 🚧 | Endless side-scrolling obstacle jumper — logic and rendering are implemented but the menu entry is not yet exposed. |
-| **Duel** | 🚧 | Two-fighter versus-AI combat — logic and rendering are implemented but the menu entry is not yet exposed. |
 
 ### WireGuard VPN
 
