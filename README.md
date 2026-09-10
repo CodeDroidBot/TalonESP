@@ -168,11 +168,6 @@ Bus Pirate-style pin control and protocol tooling.
 | **Tetris** | ✅ | Falling-block puzzle with levels and hard drop. |
 | **Pong** | ✅ | Breakout-style solo paddle game with three lives. |
 
-### WireGuard VPN
-
-| Menu Item | Status | Function |
-|-----------|:------:|----------|
-| **WireGuard** | 🔬 | Loads `/wireguard.conf` from SD and brings up a single-peer tunnel over the existing WiFi link. Requires a manual config file provisioned on a PC. |
 
 ### Web UI
 
@@ -180,34 +175,21 @@ Bus Pirate-style pin control and protocol tooling.
 |-----------|:------:|----------|
 | **Web UI** | ✅ | On-device HTTP server for controlling the GPIO workbench and viewing device state from a browser. |
 
-### Planned / Roadmap
-
-Features that are declared in the codebase or documented but not yet implemented:
-
-- 🚧 BLE HID mode for BadUSB (BLE stack stubs exist; only USB transport is active)
-- 🚧 LoRa mesh / peer discovery
-- 🚧 Sub-GHz rolling-code analysis (KeeLoq, Somfy RTS, Security+ 2.0 — detection is done, replay/brute is blocked by design)
-- 🚧 NFC tag emulation (read-only today)
-- 🚧 OTA firmware update over WiFi
-- 🚧 Remote control from a companion Android/iOS app
-
 ---
 
 ## Hardware
 
 | Component | Part | Notes |
 |-----------|------|-------|
-| **MCU** | ESP32-S3 | 16 MB flash, 8 MB PSRAM (N16R8) |
+| **MCU** | ESP32-S3 |
 | **Display** | ILI9341 | 240×320 SPI TFT |
-| **Input** | MCP23017 | I2C GPIO expander, 6 buttons |
-| **Sub-GHz** | CC1101 | Shared SPI bus |
-| **Infrared** | RX + TX | 38 kHz demodulator and IR LED |
+| **Input** | MCP23017 |
+| **Sub-GHz** | CC1101 | 
+| **Infrared** | RX + TX | 
 | **GPS** | NMEA UART module | 9600 baud default |
-| **LoRa** | SX127x / RFM95 | SPI, pins reserved in `config.h` — module not included in base build |
-| **Storage** | microSD | Shared SPI bus |
-| **Status LED** | WS2812 NeoPixel | Onboard, single pixel |
-
-Pin assignments are defined in `include/config.h`. The SPI bus is shared between the display, SD card, CC1101, and LoRa module, each with its own chip-select line.
+| **LoRa** | SX127x / RFM95 | 
+| **Storage** | microSD |
+| **Status LED** | WS2812 NeoPixel | 
 
 ---
 
