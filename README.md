@@ -87,17 +87,13 @@ Passive scanning and threat detection.
 
 ### BadUSB
 
-Full DuckyScript 1.0 interpreter with native USB HID execution.
+Full DuckyScript 1.0 interpreter with native USB HID execution. (pending full implementation)
 
 | Menu Item | Function |
 |-----------|----------|
 | **Type (Keyboard)** | Type a fixed test string over USB HID to verify the target recognizes the device. |
 | **Mouse Control** | Placeholder for USB mouse HID (not implemented in this build). |
 | **Custom Script** | Browse `/badusb/*.txt` on SD and execute the selected DuckyScript payload. |
-
-**Supported DuckyScript commands:** `STRING` · `STRINGLN` · `DELAY` · `DEFAULT_DELAY` · modifier combos · `REPEAT` · `VAR` · `DEFINE` · `IF` · `WHILE` · `FUNCTION` / `CALL`
-
-**Keyboard layouts:** US · DE · FR · ES · IT · PT-BR · PT-PT · SV · DA · HU
 
 ### GPS
 
