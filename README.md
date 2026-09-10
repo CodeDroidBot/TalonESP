@@ -48,87 +48,116 @@ Coverage across 315, 433.92, 868, and 915 MHz.
 
 ### Infrared
 
-- **Universal Remote** — icon-based skins loaded from SD (TV, AC, audio, projector)
-- **IR Read** — capture and save signals in Flipper `.ir` format
-- **Custom IR** — replay from the saved signal library
-- **TV-B-Gone** — power-off sequence for common TV brands
-- **IR Jammer** — continuous IR noise emission
+Universal remote and signal tooling for consumer IR devices.
+
+| Menu Item | Function |
+|-----------|----------|
+| **TV-B-Gone** | Cycle through power-off codes for common TV brands to switch off any nearby display. |
+| **Custom IR** | Browse and replay saved `.ir` signal files from the SD card. |
+| **IR Read** | Capture incoming IR signals and save them in Flipper `.ir` format. |
+| **IR Jammer** | Emit continuous IR noise to interfere with IR-controlled devices. |
+| **Universal Remote** | Icon-based remote control with SD-loaded skins for TVs, ACs, audio gear, and projectors. |
 
 ### WiFi (2.4 GHz)
 
 Passive and active tools sharing a single radio.
 
-**Passive**
-- Network scan (RSSI-sorted)
-- Signal meter with live bars
-- Packet monitor with 13-channel waterfall
-- Channel activity analyzer
-- Promiscuous sniffer (CSV output to SD)
-- Passive deauth/disassoc detector
-
-**Active**
-- Targeted deauth injection
-- Beacon spam
-- Evil Portal with SD-loaded HTML pages and credential logging
-- WPA handshake capture with automatic deauth (`.pcap` output, hashcat-ready)
-
-**Utilities**
-- Local subnet host discovery (TCP port 80)
-- Saved network connection via `/wifi_creds.csv`
+| Menu Item | Function |
+|-----------|----------|
+| **Scan** | Enumerate nearby access points and list them sorted by RSSI. |
+| **Signal strength** | Display live RSSI bars for all visible networks as signal changes over time. |
+| **Packet Monitor** | Count management, control, and data frames with a 13-channel waterfall visualization. |
+| **Deauth Detect** | Passively count deauth and disassoc frames to flag possible attacks. |
+| **Deauth** | Inject targeted deauth frames at a chosen AP to disconnect its clients. |
+| **Beacon Spam** | Flood the air with randomized beacon frames advertising fake SSIDs. |
+| **Channel Analyzer** | Show per-channel activity histograms to identify congested or quiet bands. |
+| **Sniffer** | Capture promiscuous 802.11 traffic and log packet metadata to SD in CSV. |
+| **Connect (saved)** | Join a saved network from `/wifi_creds.csv` and display the assigned IP. |
+| **Scan Hosts** | Probe the local subnet for live hosts on TCP port 80 (HTTP). |
+| **Evil Portal** | Serve a configurable captive-portal page and log submitted credentials. |
+| **Handshake Capture** | Capture a full WPA 4-way handshake with automatic deauth, saved as hashcat-ready `.pcap`. |
 
 ### Bluetooth LE
 
-- Passive advertisement scanner, RSSI-sorted
-- Apple Find My beacon detection (anti-stalking)
-- Heuristic card-skimmer signature detection
+Passive scanning and threat detection.
+
+| Menu Item | Function |
+|-----------|----------|
+| **Scan** | Enumerate nearby BLE advertisers with name, MAC, and RSSI, sorted by signal strength. |
+| **AirTag Sniffer** | Flag Apple Find My beacon advertisements for anti-stalking detection. |
+| **Skimmer Detect** | Flag BLE devices matching common card-skimmer naming patterns. |
 
 ### BadUSB
 
-Full DuckyScript 1.0 interpreter with runtime-switchable keyboard layouts.
+Full DuckyScript 1.0 interpreter with native USB HID execution.
 
-**Supported commands:** `STRING` · `STRINGLN` · `DELAY` · `DEFAULT_DELAY` · modifier combos · `REPEAT` · `VAR` · `DEFINE` · `IF` · `WHILE` · `FUNCTION` / `CALL`
+| Menu Item | Function |
+|-----------|----------|
+| **Type (Keyboard)** | Type a fixed test string over USB HID to verify the target recognizes the device. |
+| **Mouse Control** | Placeholder for USB mouse HID (not implemented in this build). |
+| **Custom Script** | Browse `/badusb/*.txt` on SD and execute the selected DuckyScript payload. |
+
+**Supported DuckyScript commands:** `STRING` · `STRINGLN` · `DELAY` · `DEFAULT_DELAY` · modifier combos · `REPEAT` · `VAR` · `DEFINE` · `IF` · `WHILE` · `FUNCTION` / `CALL`
 
 **Keyboard layouts:** US · DE · FR · ES · IT · PT-BR · PT-PT · SV · DA · HU
 
-Payloads load from `/badusb/*.txt` on SD. Execution uses the ESP32-S3's native USB peripheral — no external microcontroller required.
+### GPS
 
-### GPS & Wardriving
+Positioning, logging, and location-tagged scanning.
 
-- **Live Fix** — latitude, longitude, altitude, speed, compass, satellite quality
-- **Log Track** — periodic CSV track logging
-- **Waypoints** — save, view, delete, bearing-to-target
-- **Wardriving** — WiGLE-format CSV of every unique BSSID, tagged with position
+| Menu Item | Function |
+|-----------|----------|
+| **Live Fix** | Display latitude, longitude, altitude, speed, compass heading, and satellite quality. |
+| **Log Track** | Periodically append current position to a CSV track log on SD. |
+| **Waypoints** | Save, view, delete, and navigate to saved waypoints with bearing-to-target display. |
+| **Wardrive** | Log every unique BSSID seen with its GPS position in WiGLE-compatible CSV format. |
 
 ### LoRa (SX127x)
 
-- **Chat / Beacon** — text messaging between devices
-- **Packet Monitor** — live RSSI/SNR, RX/TX counters
-- **Settings** — runtime band, spreading factor, TX power
+Point-to-point messaging and packet analysis.
+
+| Menu Item | Function |
+|-----------|----------|
+| **Chat / Beacon** | Send and receive short text messages between TalonESP devices over LoRa. |
+| **Packet Monitor** | Display live RSSI, SNR, and RX/TX counters for every received packet. |
+| **Settings** | Adjust band (433/868/915 MHz), spreading factor, and TX power at runtime. |
 
 ### GPIO Workbench
 
-| Mode | Features |
-|------|----------|
-| **Pin Control** | 10 header pins + 10 MCP23017 expander pins; input, input-pullup, output, PWM |
-| **I2C** | Scanner, read, write, write-read, bus speed, slave mode |
-| **SPI** | Transfer, mode, frequency, slave mode |
-| **UART** | Terminal, bridge, configurable baud/parity/stop bits |
-| **1-Wire** | Presence detect, ROM read |
-| **2-Wire** | Reserved for smart-card work |
-| **3-Wire** | Reserved for EEPROM work |
-| **NFC** | PN532 reader support |
+Bus Pirate-style pin control and protocol tooling.
+
+| Menu Item | Function |
+|-----------|----------|
+| **Pin Control (Header)** | Set any of the 10 header pins to input, input-pullup, output, or PWM. |
+| **Pin Control (Expander)** | Control the 10 MCP23017 expander pins with the same input/output/PWM modes. |
+| **I2C** | Scan the bus and perform read, write, write-read, bus-speed, and slave-mode operations. |
+| **SPI** | Transfer bytes with configurable mode and clock frequency, plus SPI slave mode. |
+| **UART** | Terminal and bridge with configurable baud, parity, and stop bits. |
+| **1-Wire** | Detect presence and read the ROM ID of connected 1-Wire devices. |
+| **2-Wire** | Reserved for ISO 7816 smart-card and I2C-sniffing work. |
+| **3-Wire** | Reserved for 3-wire EEPROM and SPI-like device work. |
+| **NFC** | PN532 reader support for ISO 14443A/B tag detection. |
 
 ### Interface
 
-- Custom icon-grid home screen
-- 3 theme styles × 2 modes:
-  - Terminal Green · Orange/Grey · **RGB Cycle** (animated hue rotation)
-  - Dark · Light
-- Adjustable brightness, idle timeout, display orientation
+| Menu Item | Function |
+|-----------|----------|
+| **Theme** | Cycle between Terminal Green, Orange/Grey, and RGB Cycle animated palettes. |
+| **Mode** | Toggle between Dark and Light variants of the current theme. |
+| **Brightness** | Adjust the TFT backlight level from 16 to 255. |
+| **Orientation** | Rotate the display between 0°, 90°, 180°, and 270°. |
+| **Timeout** | Set the display idle dimming timer (Never, 30s, 1m, 5m, 10m, 30m). |
+| **Debounce** | Adjust the button debounce window from 5 to 100 ms. |
 
 ### Games
 
-Snake · Tetris · Pong · Jumper · Duel
+| Menu Item | Function |
+|-----------|----------|
+| **Snake** | Classic grid snake with score and speed progression. |
+| **Tetris** | Falling-block puzzle with hold, levels, and hard drop. |
+| **Pong** | Breakout-style solo paddle game with three lives. |
+| **Jumper** | Endless side-scrolling obstacle jumper with progressive difficulty. |
+| **Duel** | Two-fighter versus-AI combat with move, punch, and block. |
 
 ---
 
