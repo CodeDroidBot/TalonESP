@@ -101,7 +101,7 @@ Full DuckyScript 1.0 interpreter with native USB HID execution.
 | Menu Item | Status | Function |
 |-----------|:------:|----------|
 | **Type (Keyboard)** | ✅ | Type a fixed test string over USB HID to verify the target recognizes the device. |
-| **Mouse Control** | 🚧 | USB mouse HID is declared but not implemented in this build (TinyUSB mouse descriptor not wired up). |
+| **Mouse Control** | 🚧 (pending) | USB mouse HID is declared but not implemented in this build (TinyUSB mouse descriptor not wired up). |
 | **Custom Script** | ✅ | Browse `/badusb/*.txt` on SD and execute the selected DuckyScript payload. |
 
 **Supported DuckyScript commands:** `STRING` · `STRINGLN` · `DELAY` · `DEFAULT_DELAY` · modifier combos · `REPEAT` · `VAR` · `DEFINE` · `IF` · `WHILE` · `FUNCTION` / `CALL`
