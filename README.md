@@ -100,19 +100,11 @@ Full DuckyScript 1.0 interpreter with native USB HID execution.
 
 | Menu Item | Status | Function |
 |-----------|:------:|----------|
-| **Type (Keyboard)** | ✅ | Type a fixed test string over USB HID to verify the target recognizes the device. |
+| **Type (Keyboard)** | ✅ (pending) | Type a fixed test string over USB HID to verify the target recognizes the device. |
 | **Mouse Control** | 🚧 (pending) | USB mouse HID is declared but not implemented in this build (TinyUSB mouse descriptor not wired up). |
-| **Custom Script** | ✅ | Browse `/badusb/*.txt` on SD and execute the selected DuckyScript payload. |
-
-**Supported DuckyScript commands:** `STRING` · `STRINGLN` · `DELAY` · `DEFAULT_DELAY` · modifier combos · `REPEAT` · `VAR` · `DEFINE` · `IF` · `WHILE` · `FUNCTION` / `CALL`
-
-**Keyboard layouts:** US · DE · FR · ES · IT · PT-BR · PT-PT · SV · DA · HU
-
-**Pending parser features:** multi-line `IF`/`ELSE`/`END_IF` blocks, arrays, string variables, `WAIT_FOR_BUTTON_PRESS`, `JITTER`, `ATTACKMODE`.
+| **Custom Script** | ✅ (pending) | Browse `/badusb/*.txt` on SD and execute the selected DuckyScript payload. |
 
 ### GPS
-
-Positioning, logging, and location-tagged scanning.
 
 | Menu Item | Status | Function |
 |-----------|:------:|----------|
@@ -131,11 +123,7 @@ Point-to-point messaging and packet analysis.
 | **Packet Monitor** | ✅ | Display live RSSI, SNR, and RX/TX counters for every received packet. |
 | **Settings** | ✅ | Adjust band (433/868/915 MHz), spreading factor, and TX power at runtime. |
 
-*Note: requires a LoRa module (SX127x/RFM95) to be physically wired to the board. Pin assignments are reserved in `config.h` but the module is not part of the base build.*
-
 ### GPIO Workbench
-
-Bus Pirate-style pin control and protocol tooling.
 
 | Menu Item | Status | Function |
 |-----------|:------:|----------|
@@ -153,7 +141,7 @@ Bus Pirate-style pin control and protocol tooling.
 
 | Menu Item | Status | Function |
 |-----------|:------:|----------|
-| **Theme** | ✅ | Cycle between Terminal Green, Orange/Grey, and RGB Cycle animated palettes. |
+| **Theme** | ✅ | Cycle between Terminal Green, Orange/Grey |
 | **Mode** | ✅ | Toggle between Dark and Light variants of the current theme. |
 | **Brightness** | ✅ | Adjust the TFT backlight level from 16 to 255. |
 | **Orientation** | ✅ | Rotate the display between 0°, 90°, 180°, and 270°. |
@@ -198,14 +186,12 @@ Bus Pirate-style pin control and protocol tooling.
 ### Requirements
 
 - [PlatformIO](https://platformio.org/) (CLI or VS Code extension)
-- ESP32-S3 dev board with 16 MB flash and 8 MB PSRAM
-- Hardware wired per `include/config.h`
 - FAT32-formatted microSD card
 
 ### Build and Flash
 
 ```bash
-git clone https://github.com/YOUR-USER/talonesp.git
+git clone https://github.com/CodeDroidBot/talonesp.git
 cd talonesp
 pio run                    # compile
 pio run -t upload          # flash
