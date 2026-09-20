@@ -1,6 +1,6 @@
 # TalonESP
 
-**A handheld wireless research platform built on the ESP32-S3.**
+**The TalonESP is a handheld wireless security tool build for pentesting and debugging hardware.**
 
 [![Platform](https://img.shields.io/badge/platform-ESP32--S3-blue?logo=espressif)](https://www.espressif.com/en/products/socs/esp32-s3)
 [![Framework](https://img.shields.io/badge/framework-Arduino%20%7C%20PlatformIO-orange?logo=platformio)](https://platformio.org/)
