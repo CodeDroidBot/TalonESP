@@ -21,7 +21,7 @@
 
 ---
 
-TalonESP is an open-source, pocket-sized instrument for wireless research, RF analysis, and hardware debugging. 
+TalonESP is an open-source, pocket-sized instrument for wireless research, RF analysis, and hardware debugging. build for researchers and pentesters and begineers.
 
 ---
 
