@@ -3,8 +3,6 @@
   <img src="Img/TalonESP.png" alt="Boot splash" width="500">
 </p>
 
-# TalonESP
-
 **The TalonESP is a handheld wireless security tool build for pentesting and debugging hardware.**
 
 [![Platform](https://img.shields.io/badge/platform-ESP32--S3-blue?logo=espressif)](https://www.espressif.com/en/products/socs/esp32-s3)
