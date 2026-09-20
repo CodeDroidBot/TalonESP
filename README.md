@@ -163,19 +163,27 @@ Point-to-point messaging and packet analysis.
 
 ---
 
-## Hardware
+## 🧰 Hardware Requirements
 
-| Component | Part | Notes |
-|-----------|------|-------|
-| **MCU** | ESP32-S3 |
-| **Display** | ILI9341 | 240×320 SPI TFT |
-| **Input** | MCP23017 |
-| **Sub-GHz** | CC1101 | 
-| **Infrared** | RX + TX | 
-| **GPS** | NMEA UART module | 9600 baud default |
-| **LoRa** | SX127x / RFM95 | 
-| **Storage** | microSD |
-| **Status LED** | WS2812 NeoPixel | 
+| Component | Details |
+|---|---|
+| **MCU** | ESP32-S3 (tested on N16R8: 16 MB flash, 8 MB PSRAM) |
+| **Display** | ILI9341 240×320 SPI TFT |
+| **SD Card** | SPI, FAT32 |
+| **Buttons** | 6 buttons via MCP23017 I²C expander |
+| **Sub-GHz** | CC1101 module |
+| **IR** | IR & TX |
+| **RGB LED** | WS2812 / NeoPixel (status indicator) | (optional)
+
+### Optional
+
+| Component | Details |
+|---|---|
+| **GPS** | Any NMEA module (e.g. NEO-6M / NEO-M8N) |
+| **LoRa** | SX1276 / SX1278 / RFM95 (433 / 868 / 915 MHz) |
+| **NFC / RFID** | PN532 (I²C) |
+| **nRF24** | nRF24L01+ |
+| **CAN** | Built-in TWAI or MCP2515 |
 
 ---
 The Porject is currently development and pending full integration and features
