@@ -135,7 +135,7 @@ Point-to-point messaging and packet analysis.
 | **3-Wire** | 🚧 | 3-wire EEPROM read, write, and erase screens are declared but the runtime handlers are stubs. |
 | **NFC** | 🚧 | PN532 reader screen is declared but the ISO 14443A/B tag-detection loop is not yet wired up. |
 
-### Interface
+### Settings
 
 | Menu Item | Status | Function |
 |-----------|:------:|----------|
