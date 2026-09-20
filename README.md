@@ -17,9 +17,7 @@
 
 ---
 
-TalonESP is an open-source, pocket-sized instrument for wireless research, RF analysis, and hardware exploration. It consolidates Sub-GHz, WiFi, Bluetooth LE, infrared, LoRa, GPS, and native USB HID into a single self-contained device with a color TFT display and a six-button interface.
-
-The system runs entirely on-device. There is no cloud dependency, no telemetry, and no account requirement. All captures, scripts, and logs are stored on a removable microSD card using open, interoperable formats: Flipper-compatible `.sub` and `.ir` files, standard `.pcap` captures, DuckyScript payloads, and WiGLE CSV wardriving output.
+TalonESP is an open-source, pocket-sized instrument for wireless research, RF analysis, and hardware debugging. 
 
 ---
 
@@ -94,7 +92,7 @@ Passive scanning and threat detection.
 | **AirTag Sniffer** | ✅ | Flag Apple Find My beacon advertisements for anti-stalking detection. |
 | **Skimmer Detect** | ✅ | Flag BLE devices matching common card-skimmer naming patterns. |
 
-### BadUSB
+### BadUSB (Pending full intergration)
 
 Full DuckyScript 1.0 interpreter with native USB HID execution.
 
@@ -123,7 +121,7 @@ Point-to-point messaging and packet analysis.
 | **Packet Monitor** | ✅ | Display live RSSI, SNR, and RX/TX counters for every received packet. |
 | **Settings** | ✅ | Adjust band (433/868/915 MHz), spreading factor, and TX power at runtime. |
 
-### GPIO Workbench
+### GPIO Workbench (Pending full Integration)
 
 | Menu Item | Status | Function |
 |-----------|:------:|----------|
@@ -157,7 +155,7 @@ Point-to-point messaging and packet analysis.
 | **Pong** | ✅ | Breakout-style solo paddle game with three lives. |
 
 
-### Web UI
+### Web UI (Pending full intergration)
 
 | Menu Item | Status | Function |
 |-----------|:------:|----------|
@@ -180,6 +178,8 @@ Point-to-point messaging and packet analysis.
 | **Status LED** | WS2812 NeoPixel | 
 
 ---
+The Porject is currently development and pending full integration and features
+
 
 ## Getting Started
 
