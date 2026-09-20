@@ -169,7 +169,7 @@ Point-to-point messaging and packet analysis.
 |---|---|
 | **MCU** | ESP32-S3 (tested on N16R8: 16 MB flash, 8 MB PSRAM) |
 | **Display** | ILI9341 240×320 SPI TFT |
-| **SD Card** | SPI, FAT32 |
+| **SD Card Module** |
 | **Buttons** | 6 buttons via MCP23017 I²C expander |
 | **Sub-GHz** | CC1101 module |
 | **IR** | IR & TX |
