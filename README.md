@@ -1,3 +1,8 @@
+
+<p align="center">
+  <img src="Img/TalonESP.png" alt="Boot splash" width="300">
+</p>
+
 # TalonESP
 
 **The TalonESP is a handheld wireless security tool build for pentesting and debugging hardware.**
@@ -5,11 +10,6 @@
 [![Platform](https://img.shields.io/badge/platform-ESP32--S3-blue?logo=espressif)](https://www.espressif.com/en/products/socs/esp32-s3)
 [![Framework](https://img.shields.io/badge/framework-Arduino%20%7C%20PlatformIO-orange?logo=platformio)](https://platformio.org/)
 [![Status](https://img.shields.io/badge/status-active-brightgreen)]()
-
-
-<p align="center">
-  <img src="docs/images/boot.png" alt="Boot splash" width="300">
-</p>
 
 > [!WARNING]
 > **TalonESP is a research and educational tool.**
