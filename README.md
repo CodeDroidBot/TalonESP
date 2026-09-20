@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="Img/TalonESP.png" alt="Boot splash" width="300">
+  <img src="Img/TalonESP.png" alt="Boot splash" width="500">
 </p>
 
 # TalonESP
