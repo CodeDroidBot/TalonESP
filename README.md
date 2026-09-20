@@ -7,6 +7,10 @@
 [![Status](https://img.shields.io/badge/status-active-brightgreen)]()
 
 
+<p align="center">
+  <img src="docs/images/boot.png" alt="Boot splash" width="300">
+</p>
+
 > [!WARNING]
 > **TalonESP is a research and educational tool.**
 > It transmits on regulated radio bands and can disrupt wireless networks.
