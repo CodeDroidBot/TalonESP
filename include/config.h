@@ -5,7 +5,7 @@
 // Shown on the About/boot screen. Change this to whatever you want to call
 // your build - it's just a display string, nothing else depends on it.
 #define DEVICE_NAME "GreyHat"
-
+#define DEVICE_AUTHOR "by CodeDroidBot"
 // ---------------- Shared SPI bus (TFT + SD + CC1101) ----------------
 #define PIN_SPI_SCK   12
 #define PIN_SPI_MOSI  11
