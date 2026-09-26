@@ -127,7 +127,7 @@ Point-to-point messaging and packet analysis.
 | **Packet Monitor** | ✅ | Display live RSSI, SNR, and RX/TX counters for every received packet. |
 | **Settings** | ✅ | Adjust band (433/868/915 MHz), spreading factor, and TX power at runtime. |
 
-### GPIO Workbench (contain bugs)
+### GPIO  (Pending full intergration)
 
 | Menu Item | Status | Function |
 |-----------|:------:|----------|
