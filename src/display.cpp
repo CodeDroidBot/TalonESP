@@ -361,26 +361,28 @@ void displayShowBootSplash(const char* deviceName) {
     int screenW = tft.width();
     int screenH = tft.height();
 
-    // Center horizontally, place upper-middle so text fits below.
     int iconX = (screenW - 180) / 2;
     int iconY = (screenH - 180) / 2 - 40;
 
-    // If colors come out wrong (rainbow / swapped R and B),
-    // uncomment the line below:
-    // tft.setSwapBytes(true);
-
     tft.drawBitmap(iconX, iconY, boot_logo, 180, 180, pal.fg);
 
-    // Device name under that, dimmed
     if (deviceName && deviceName[0]) {
-        tft.setTextSize(1);
-        int dw = strlen(deviceName) * 6;
-        tft.setTextColor(pal.fgDim, pal.bg);
-        tft.setCursor((screenW - dw) / 2, iconY + 180 + 40);
+        tft.setTextSize(2);
+        int dw = strlen(deviceName) * 12;
+        tft.setTextColor(pal.fg, pal.bg);
+        tft.setCursor((screenW - dw) / 2, iconY + 180 + 20);
         tft.print(deviceName);
     }
-}
 
+#if defined(DEVICE_AUTHOR)
+    const char* credit = DEVICE_AUTHOR;
+    tft.setTextSize(1);
+    int cw = strlen(credit) * 6;
+    tft.setTextColor(pal.fgDim, pal.bg);
+    tft.setCursor((screenW - cw) / 2, iconY + 180 + 48);
+    tft.print(credit);
+#endif
+}
 // -------------------------------------------------------------------
 //  Drawing primitives
 // -------------------------------------------------------------------
