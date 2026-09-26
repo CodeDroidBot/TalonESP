@@ -93,6 +93,10 @@ Passive scanning and threat detection.
 | **Scan** | ✅ | Enumerate nearby BLE advertisers with name, MAC, and RSSI, sorted by signal strength. |
 | **AirTag Sniffer** | ✅ | Flag Apple Find My beacon advertisements for anti-stalking detection. |
 | **Skimmer Detect** | ✅ | Flag BLE devices matching common card-skimmer naming patterns. |
+| **BLE Spam** | ✅ | Flood the air with fake pairing popups. |
+| **BLE Beacon** | ✅ | Advertise continuously as a real beacon: iBeacon. |
+| **Phantom Flood** | ✅ | Continuous Apple Find My flood nearby iPhones show hundreds of "unknown AirTag nearby" alerts. |
+| **WhisperPair** | ✅ | Scan Fast Pair devices and identify which advertise without being in pairing mode. |
 
 ### Ducky
 
