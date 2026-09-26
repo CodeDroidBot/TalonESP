@@ -94,15 +94,15 @@ Passive scanning and threat detection.
 | **AirTag Sniffer** | ✅ | Flag Apple Find My beacon advertisements for anti-stalking detection. |
 | **Skimmer Detect** | ✅ | Flag BLE devices matching common card-skimmer naming patterns. |
 
-### BadUSB (Pending full intergration)
+### Ducky
 
 Full DuckyScript 1.0 interpreter with native USB HID execution.
 
 | Menu Item | Status | Function |
 |-----------|:------:|----------|
-| **Type (Keyboard)** | ✅ (pending) | Type a fixed test string over USB HID to verify the target recognizes the device. |
-| **Mouse Control** | 🚧 (pending) | USB mouse HID is declared but not implemented in this build (TinyUSB mouse descriptor not wired up). |
-| **Custom Script** | ✅ (pending) | Browse `/badusb/*.txt` on SD and execute the selected DuckyScript payload. |
+| **USB DUCKY** | ✅  | run ducky script over usb. |
+| **BLE DUCKY** | ✅   | run ducky script ober ble. |
+
 
 ### GPS
 
@@ -123,7 +123,7 @@ Point-to-point messaging and packet analysis.
 | **Packet Monitor** | ✅ | Display live RSSI, SNR, and RX/TX counters for every received packet. |
 | **Settings** | ✅ | Adjust band (433/868/915 MHz), spreading factor, and TX power at runtime. |
 
-### GPIO Workbench (Pending full Integration)
+### GPIO Workbench (contain bugs)
 
 | Menu Item | Status | Function |
 |-----------|:------:|----------|
@@ -133,9 +133,9 @@ Point-to-point messaging and packet analysis.
 | **SPI** | ✅ | Transfer bytes with configurable mode and clock frequency, plus SPI slave mode. |
 | **UART** | ✅ | Terminal and bridge with configurable baud, parity, and stop bits. |
 | **1-Wire** | ✅ | Detect presence and read the ROM ID of connected 1-Wire devices. |
-| **2-Wire** | 🚧 | Reserved for ISO 7816 smart-card and I2C-sniffing work — not yet implemented. |
-| **3-Wire** | 🚧 | 3-wire EEPROM read, write, and erase screens are declared but the runtime handlers are stubs. |
-| **NFC** | 🚧 | PN532 reader screen is declared but the ISO 14443A/B tag-detection loop is not yet wired up. |
+| **2-Wire** | ✅  | Reserved for ISO 7816 smart-card and I2C-sniffing work — not yet implemented. |
+| **3-Wire** | ✅  | 3-wire EEPROM read, write, and erase screens are declared but the runtime handlers are stubs. |
+| **NFC** | ✅ | PN532 reader screen is declared but the ISO 14443A/B tag-detection loop is not yet wired up. |
 
 ### Settings
 
@@ -188,7 +188,7 @@ Point-to-point messaging and packet analysis.
 | **CAN** | Built-in TWAI or MCP2515 |
 
 ---
-The Porject is currently development and pending full integration and features
+The Porject is currently development and pending full integration and features and more feature coming soon.
 
 
 ## Getting Started
